@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="java-adv-jsp-add">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="java-adv-jsp-add"/>
+        <property name="java-output-path" value="/java-adv-jsp-add/build/classes"/>
+    </wb-module>
+</project-modules>

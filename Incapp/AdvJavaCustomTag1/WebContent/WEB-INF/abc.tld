@@ -1,0 +1,14 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<tag>
+		<name>demo</name>
+		<tag-class>my.Pqr</tag-class>
+		<body-content>jsp</body-content>
+	</tag>
+	<tag>
+		<name>test</name>
+		<tag-class>my.JK</tag-class>
+		<body-content>jsp</body-content>
+	</tag>
+</taglib>

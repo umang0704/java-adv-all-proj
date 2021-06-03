@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="java-adv-URL-Rewriting">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="java-adv-URL-Rewriting"/>
+        <property name="java-output-path" value="/java-adv-URL-Rewriting/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calling</title>
+</head>
+<body>
+	<a href="called">Called</a>
+	|<a href="not_called">Not Called</a>
+	<hr>
+	<table>
+		<tr style="width:100%;border: 1px solid black;border-collapse: collapse;">
+			<th style="border: 1px solid black;border-collapse: collapse;">Name</th>
+			<th style="border: 1px solid black;border-collapse: collapse;">Phone</th>
+			<th style="border: 1px solid black;border-collapse: collapse;">Called/Not Called</th>
+			<th style="border: 1px solid black;border-collapse: collapse;">Status</th>
+		</tr> 
+		<tr>
+		<td style="border: 1px solid black;border-collapse: collapse;"> </td>
+		<td style="border: 1px solid black;border-collapse: collapse;"> </td>
+		<td style="border: 1px solid black;border-collapse: collapse;"> 
+		<form action="">
+			<input type="hiddem" name='cname' value=''/>
+			<button type="submit">Called</button>
+		</form>
+		<form action="">
+			<input type="hiddem" name='cname' value='' />
+			<button type="submit">Not Called</button>
+		</form>  
+		</td>
+		<td style="border: 1px solid black;border-collapse: collapse;"> 
+		<form action="">
+			<input type="hiddem" name='cname' value=''/>
+			<input type="text" name='status' required>
+			<button type="submit">Set Status</button>
+		</form>
+		
+		</td>
+		</tr>
+	</table>
+</body>
+</html>

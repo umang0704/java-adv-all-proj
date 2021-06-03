@@ -1,0 +1,25 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>Square</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/f1</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>SI</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/f2</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>

@@ -1,0 +1,163 @@
+@charset "ISO-8859-1";
+body {
+  background-color: #0080FF;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a{
+  margin-top: 5px;
+  width: 80%;
+  border: 0;
+  padding: 10px 30px;
+  /*background-color: #007AF3;*/
+  background-color: #0063c4;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+  font-weight: 100;
+  font-size: 15px;
+  cursor:pointer;
+}
+
+a:hover, a:active{
+	background-color: white;
+	color: #0063c4;
+	border:3px solid #0063c4;
+	border-radius: 5px;
+}
+
+#container {
+  width: 840px;
+  margin: 50px auto;
+  margin-top: 80px;
+}
+
+.whysign {
+  float: left;
+  background-color: #0063c4;
+  color:white;
+  width: 480px;
+  height: 537px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  
+}
+.whysign p{
+	color:white;
+	font-family: 'Titillium Web', sans-serif;
+	margin-right:20px;
+}
+
+.whysignLogin
+{
+  float: left;
+  background-color: #0063c4;
+  color:white;
+  width: 480px;
+  height: 307px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.whysignLogin p{
+	color:white;
+	font-family: 'Titillium Web', sans-serif;
+	margin-right:20px;
+}
+
+.whyforgotPassword
+{
+	float: left;
+  background-color: white;
+  width: 480px;
+  height: 470px;
+  border-radius: 0 5px 5px 0;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.signup {
+  float: left;
+  width: 300px;
+  padding: 30px 20px;
+  background-color: white;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+.signup a{
+	text-decoration:none;
+}
+
+.login-signup{
+	margin-top:150px;
+}
+
+
+[type=text],[type=email],[type=number],[type=password],select,option {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 0;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  height: 45px;
+  line-height: 45px;  
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: black;
+}
+
+[type=submit] {
+  margin-top: 25px;
+  width: 80%;
+  border: 0;
+  font-family: 'Titillium Web', sans-serif;
+  /*background-color: #007AF3;*/
+  background-color: #0063c4;
+  border-radius: 5px;
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  cursor:pointer;
+}
+[type=submit]:hover, [type=submit]:active{
+	background-color: white;
+	color: #0063c4;
+	border:3px solid #0063c4;
+	border-radius: 5px;
+}
+
+[type='text']:focus {
+  outline: none;
+  border: 5px #53CACE;
+}
+
+h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 2.5em;
+}
+
+p {
+  color: rgba(0,0,0,.6);
+  font-size: 1.2em;
+  margin: 50px 0 50px 0;
+}
+
+span {
+  font-size: .75em;
+  background-color: white;
+  padding: 2px 5px;
+  color: rgba(0,0,0,.6);
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  margin: 5px;
+}
+
+span:hover {
+  color: #53CACE;
+}
+
+p:nth-of-type(2) {
+  font-size: 1em;
+}

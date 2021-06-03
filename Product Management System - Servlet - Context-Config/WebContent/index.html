@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Product Application</title>
+</head>
+<body>
+	<h1>Welcome to Store.</h1>
+	<hr>
+	<a href="index.html">Home</a>
+	<hr>
+	<h1>Search Product</h1>
+	<form action="search">
+		<label>Product Name:</label>
+		<input type="text" name="name" required/>  
+		<button type="submit"> Search</button>
+	</form>
+	<hr>
+	<h1>Add New product</h1>
+	<form action="add">
+		<label>Product Name:</label>
+		<input type="text" name="name" required/> <br>
+		<label>Product Price:</label>
+		<input type="number" name="price" required/><br>
+		<label>Product Info:</label>
+		<textarea id="" cols="20" rows="5" name="info" required></textarea>   
+		<button type="submit"> Add</button>
+	</form>
+	<hr>
+	<h1>Delete Product</h1>
+	<form action="delete">
+		<label>Product Name:</label>
+		<input type="text" name="name" required/> 
+		<button type="submit"> Delete</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Product-App</display-name>
+  
+  <servlet>
+  	<servlet-name>wel</servlet-name>
+  	<servlet-class>ser.Welcome</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Welcome Product</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>wel</servlet-name>
+   	<url-pattern>/welcome</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  	<servlet-name>admin</servlet-name>
+  	<servlet-class>ser.AdminLogin</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Admin Login</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>admin</servlet-name>
+   	<url-pattern>/adminlogin</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  	<servlet-name>admincheck</servlet-name>
+  	<servlet-class>ser.AdminLoginCheck</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Admin Login Check</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>admincheck</servlet-name>
+   	<url-pattern>/adminlogincheck</url-pattern>
+   </servlet-mapping>
+   
+   
+  <welcome-file-list>
+  	<welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>welcome</welcome-file>
+  </welcome-file-list>
+  <!-- servlet add product -->
+  <servlet>
+  	<servlet-name>add</servlet-name>
+  	<servlet-class>ser.AddProduct</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Add Product</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>add</servlet-name>
+   	<url-pattern>/add</url-pattern>
+   </servlet-mapping>
+   
+   
+  <servlet>
+  	<servlet-name>search</servlet-name>
+  	<servlet-class>ser.SearchProd</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Search Product</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>search</servlet-name>
+   	<url-pattern>/search</url-pattern>
+   </servlet-mapping>
+   
+   
+  <servlet>
+  	<servlet-name>delete</servlet-name>
+  	<servlet-class>ser.DeleteProd</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Delete Product</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>delete</servlet-name>
+   	<url-pattern>/delete</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+  	<servlet-name>deleteSuccess</servlet-name>
+  	<servlet-class>ser.DeleteSuccess</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Delete Successfull</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>deleteSuccess</servlet-name>
+   	<url-pattern>/deleteSuccess</url-pattern>
+   </servlet-mapping>
+   
+      <servlet>
+  	<servlet-name>delUnsuccess</servlet-name>
+  	<servlet-class>ser.DeleteUnsuccess</servlet-class>  
+	  <init-param>
+	  	<param-name>pgname</param-name>
+	  	<param-value>Delete Un-Successfull</param-value>
+	  </init-param>
+  </servlet>
+   <servlet-mapping>
+   	<servlet-name>delUnsuccess</servlet-name>
+   	<url-pattern>/delUnsuccess</url-pattern>
+   </servlet-mapping>
+   
+   <context-param>
+   	<param-name>dbDriver</param-name>
+   	<param-value>com.mysql.cj.jdbc.Driver</param-value>
+   </context-param>
+   <context-param>
+   	<param-name>dbPath</param-name>
+   	<param-value>jdbc:mysql://localhost:3306/productapp?useSSL=false</param-value>
+   </context-param>
+   <context-param>
+   	<param-name>dbId</param-name>
+   	<param-value>root</param-value>
+   </context-param>
+   <context-param>
+   	<param-name>dbPass</param-name>
+   	<param-value>Umang@123</param-value>
+   </context-param>
+</web-app>

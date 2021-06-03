@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Student-App-Update2</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Servlet Mapping -->
+
+	<!-- Admin Login -->
+	<servlet>
+		<servlet-name>adminlogin</servlet-name>
+		<servlet-class>serv.AdminLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminlogin</servlet-name>
+		<url-pattern>/admin_login</url-pattern>
+	</servlet-mapping>
+
+	<!-- Admin Authentication -->
+	<servlet>
+		<servlet-name>adminauth</servlet-name>
+		<servlet-class>serv.AdminAuthentication</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminauth</servlet-name>
+		<url-pattern>/admin_authentication</url-pattern>
+	</servlet-mapping>
+
+	<!-- Admin Login Error -->
+	<servlet>
+		<servlet-name>adminhome</servlet-name>
+		<servlet-class>serv.AdminHome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminhome</servlet-name>
+		<url-pattern>/admin_home</url-pattern>
+	</servlet-mapping>
+
+	<!-- Add Student Detail -->
+	<servlet>
+		<servlet-name>addstudentdetail</servlet-name>
+		<servlet-class>serv.AddStudentDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addstudentdetail</servlet-name>
+		<url-pattern>/add_student_detail</url-pattern>
+	</servlet-mapping>
+
+	<!-- Delete Student -->
+	<servlet>
+		<servlet-name>del</servlet-name>
+		<servlet-class>serv.DeleteStudentDetail</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>del</servlet-name>
+		<url-pattern>/delete_student</url-pattern>
+	</servlet-mapping>
+
+	<!-- Show all students -->
+	<servlet>
+		<servlet-name>allstudent</servlet-name>
+		<servlet-class>serv.ShowAllStudents</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>allstudent</servlet-name>
+		<url-pattern>/show_all_student</url-pattern>
+	</servlet-mapping>
+
+	<!-- Passed Students -->
+	<servlet>
+		<servlet-name>pass</servlet-name>
+		<servlet-class>serv.StudentPassed</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>pass</servlet-name>
+		<url-pattern>/pass</url-pattern>
+	</servlet-mapping>
+
+	<!-- Student Failed -->
+	<servlet>
+		<servlet-name>fail</servlet-name>
+		<servlet-class>serv.StudentFailed</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fail</servlet-name>
+		<url-pattern>/fail</url-pattern>
+	</servlet-mapping>
+
+	<!-- Logout -->
+	<servlet>
+		<servlet-name>log_out</servlet-name>
+		<servlet-class>serv.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>log_out</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<!-- Search Result -->
+	<servlet>
+		<servlet-name>search</servlet-name>
+		<servlet-class>serv.SearchIndividualResult</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>search</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+
+	<!-- Servlet Context -->
+	<context-param>
+		<param-name>dbdriver</param-name>
+		<param-value>com.mysql.cj.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbpath</param-name>
+		<param-value>jdbc:mysql://localhost:3306/productapp?useSSL=false</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbid</param-name>
+		<param-value>root</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbpass</param-name>
+		<param-value>Umang@123</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>serv.DeploymentListener</listener-class>
+	</listener>
+</web-app>

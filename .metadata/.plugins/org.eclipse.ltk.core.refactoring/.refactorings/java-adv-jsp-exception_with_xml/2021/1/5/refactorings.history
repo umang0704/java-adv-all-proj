@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;with.jsp&apos; to &apos;with.jsp&apos;&#x0D;&#x0A;- Original project: &apos;java-adv-jsp-exception_with_xml&apos;&#x0D;&#x0A;- Destination element: &apos;with.jsp&apos;&#x0D;&#x0A;- Original element: &apos;with.jsp&apos;" description="Copy file" element1="WebContent/with.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1611773567441" target="/java-adv-jsp-exception_with_xml/WebContent/with.jsp" units="0" version="1.0"/>
+</session>

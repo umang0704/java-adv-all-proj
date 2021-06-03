@@ -1,0 +1,34 @@
+<web-app>
+
+	<servlet>
+		<servlet-name>abc</servlet-name>
+		<servlet-class>Hello</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>abc</servlet-name>
+		<url-pattern>/xyz</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>abc2</servlet-name>
+		<servlet-class>Helllo2</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>abc2</servlet-name>
+		<url-pattern>/xyz2</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>abc3</servlet-name>
+		<servlet-class>Hello3</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>abc3</servlet-name>
+		<url-pattern>/xyz3</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
